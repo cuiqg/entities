@@ -113,7 +113,7 @@
 <script>
     async function copy(txt) {
         await navigator.clipboard.writeText(txt).then(() => {
-            alert(txt)
+            console.log(`Copy Success: ${txt}`);
         }, (error) => {
             console.log(error)
         })
